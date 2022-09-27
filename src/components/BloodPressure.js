@@ -6,15 +6,15 @@ import Measurement from './Measurement';
 const BloodPressure = () => {
   return (
     <section>
-      <Row className={classes.headerRow}>
-         <Col>Date</Col>
-         <Col>Time</Col>
-         <Col>Systolic</Col>
-         <Col>Diastolic</Col>
-         <Col>Pulse</Col>
-         <Col>EHS Classification</Col>
-         <Col>Warning</Col>
-      </Row>
+      <div className={`${classes.headerRow} row fw-bold bg-info sticky-top`}>
+         <div className="col border border-dark">Date</div>
+         <div className="col border border-dark">Time</div>
+         <div className="col border border-dark">Systolic</div>
+         <div className="col border border-dark">Diastolic</div>
+         <div className="col-1 border border-dark">Pulse</div>
+         <div className="col border border-dark">EHS Classification</div>
+         <div className="col border border-dark">Warning</div>
+      </div>
       <Measurement />
     </section>
   )

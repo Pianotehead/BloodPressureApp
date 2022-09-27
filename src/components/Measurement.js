@@ -1,5 +1,4 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import classes from './Measurement.module.css';
 
 const bloodpressures = [
    {
@@ -555,17 +554,17 @@ const bloodpressures = [
 
 const Measurement = () => {
    return (
-      <div>
-         {bloodpressures.map(bp => (
-            <Row>
-               <Col>{bp.Date}</Col>
-               <Col>{bp.Time}</Col>
-               <Col>{bp.Systolic}</Col>
-               <Col>{bp.Diastolic}</Col>
-               <Col>{bp.Pulse}</Col>
-               <Col>{bp.Classification}</Col>
-               <Col>{bp.Data}</Col>
-            </Row>
+      <div className={classes.measurement}>
+         {bloodpressures.map((bp, i) => (
+            <div className="row">
+               <div className="col border border-dark">{bp.Date}</div>
+               <div className="col border border-dark">{bp.Time}</div>
+               <div className="col border border-dark">{bp.Systolic}</div>
+               <div className="col border border-dark">{bp.Diastolic}</div>
+               <div className="col-1 border border-dark">{bp.Pulse}</div>
+               <div className="col border border-dark">{bp.Classification}</div>
+               <div className="col border border-dark">{bp.Data}</div>
+            </div>
          ))}
 
       </div>
