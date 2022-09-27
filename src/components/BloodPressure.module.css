@@ -1,0 +1,8 @@
+.headerRow {
+   font-weight: bold;
+}
+
+.headerRow li {
+   list-style: none;
+   flex-shrink: 1;
+}

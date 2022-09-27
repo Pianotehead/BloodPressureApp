@@ -1,0 +1,9 @@
+.measurement {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.measurement li {
+   list-style: none;
+}
